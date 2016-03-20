@@ -53,11 +53,23 @@ Start Omi Cv
 	background: #f1f1f1;
 }
 .omi_img{
+	display: block;
 	max-width: 344px;
-	padding: 15px 0;
+	padding: 0px;
+	margin-top: 25px;
+	background: #c1c1c1;
+	border-radius: 50%;
+	-webkit-filter: grayscale(100%) brightness(99%) contrast(116%);
+	filter: grayscale(100%) brightness(99%) contrast(116%);
+	-webkit-transition: all 0.8s;
+	transition: all 0.8s;
+}
+.omi_img:hover{
+	-webkit-filter: grayscale(0%) brightness(100%) contrast(100%);
+	filter: grayscale(0%) brightness(100%) contrast(100%);
 }
 .omi_pro{
-	padding-top: 50px;
+	padding-top: 55px;
 }
 .omi_pro h2{
 	margin-bottom: 0;
