@@ -1,4 +1,4 @@
-/*Css written by inbox25 team with love for inbox25*/
+/*Css written by Ariful Ahsan Omi*/
 
 /*IE and windows phone fixing*/
 @-webkit-viewport   { width: device-width; }
@@ -39,14 +39,15 @@ h1, h2, h3, h4, h5, h6, a{
 /*===============
 ===Start Resume
 ================*/
+
 .heading,
 .description{
-	text-align: center;
 }
 .heading{
 	color: #527DB6;
 	border-bottom: 2px solid #527DB6;
 	padding-bottom: 8px;
+	display: inline-block;
 }
 
 .sub_heading{
@@ -324,6 +325,7 @@ Start Omi Cv
 	font-size: 18px;
 	padding: 8px 20px;
 	margin-left: 10px;
+	width: 220px;
 	-webkit-transition: all 0.4s;
 	-ms-transition: all 0.4s;
 	-moz-transition: all 0.4s;
@@ -363,9 +365,9 @@ my_portfolio link in bottom
 ================*/
 .my_portfolio,
 .contact_me{
-	position: fixed;
 	bottom: 0;
 	left: 8%;
+	float: left;
 	display: block;
 	width: 150px;
 	height: 40px;
@@ -518,12 +520,181 @@ ul.find_me_ul li a:hover{
 	background:#3E6394;
 }
 
+body{
+	border-top: 5px solid #555;
+}
+.body-c{
+	
+	
+}
+.sidebar-left{
+	background: #eee;
+	padding-top: 50px;
+}
+.sidebar-left ul{
+	padding-left: 0;
+}
+.sidebar-left ul li{
+	list-style: none;
+}
+.sidebar-left ul li i{
+	padding-right: 8px;
+}
+.contact{
+	padding-top: 50px;
+}
+.contact-box{
+	position: relative;
+	padding-left: 50px;
+	padding-top :25px;
+}
+.contact-box i{
+	color: #555;
+	font-size: 2em;
+	position: absolute;
+	top: 30px;
+	left: 0;
+}
+.contact-box h3{
+	margin: 0;
+}
+.social-connection ul li a{
+	display: block;
+	padding: 5px;
+	color: #6F7986;
+	font-size: 1.5em;
+	-webkit-transition: all 0.4s;
+	transition: all 0.4s;
+}
+.social-connection ul li a:hover{
+	color: #5584C1;	
+}
+
 @media print {
+	
+	.col-md-9{
+		width: 75%;
+	}
+	.row{
+		display: table;
+		width: 100%;
+	}
+	.column {
+		float: none;
+		display: table-cell;
+		vertical-align: top;
+	}
+	.col-md-3{
+		width: 25%;
+	}
+	.col-md-9{
+		width: 75%;
+	}
 	.job_description li a,
 	.print_hide{
 		display: none !important;
 	}
 	.sub_heading{
 		margin-bottom: 30px;
+	}
+}
+@media (min-width: 992px){
+	.row {
+		display: table;
+		width: 100%;
+	}
+	.column {
+		float: none;
+		display: table-cell;
+		vertical-align: top;
+	}
+}
+@media (max-width: 479px) {
+	ul.find_me_ul li:nth-child(2n+1){
+		clear: left;
+	}
+}
+@media (min-width: 480px) and (max-width: 767px){
+	ul.find_me_ul li:nth-child(3n+1){
+		clear: left;
+	}
+}
+/* ==============================================================================
+/* ====== PRIMARY MOBILE ELEMENTS & STYLES
+/* ============================================================================= */
+@media (max-width: 767px){
+	.omi_img{
+		margin: 15px auto;	
+	}
+	.omi_pro{
+		text-align: center;
+	}
+	.omi_pro ul{
+		margin: 15px auto;
+		display: inline-block;
+	}
+	.omi_address{
+		text-align: center;
+		padding-top: 20px;
+	}
+	.omi_address ul{
+		display: inline-block;
+	}
+	.omi_address ul li{
+		text-align: left;
+	}
+	.omi_projects ul li a{
+		width: 280px;
+	}
+	.modal-dialog{
+		width: 98%;	
+	}
+	ul.find_me_ul li{
+		margin-bottom: 15px;
+	}
+}
+/* ==============================================================================
+/* ====== TABLET + SMALL DESKTOP
+/* ============================================================================= */
+@media (min-width: 768px) {
+	.modal-dialog{
+		width: 700px;	
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	
+}
+@media (max-width: 991px){
+	.footer{
+		padding-bottom: 50px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	
+}
+/* ==============================================================================
+/* ====== SMALL DESKTOP + MEDIUM DESKTOP
+/* ============================================================================= */
+@media (min-width: 992px) {
+	.h_box{
+		font-size: 40px;
+		width:400px;
+	}
+	.omi_projects ul.one{
+		text-align: right;
+	}
+	.omi_projects ul.two{
+		text-align: left;
+	}
+}
+
+@media (min-width: 1600px){
+	#request_callback{
+		right: 12%;
+	}
+}
+@media (min-width: 1900px){
+	#request_callback{
+		right: 18%;
 	}
 }
