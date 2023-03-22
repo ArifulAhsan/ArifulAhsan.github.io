@@ -616,6 +616,9 @@ ul.find_me_ul li a:hover{
 	padding-top: 15px;
 	box-shadow: inset 0px 0px 1px 1px #ddd;
 }
+.sidebar-left .img-responsive{
+	display: inline-block;
+}
 .sidebar-left ul{
 	padding-left: 0;
 }
